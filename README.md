@@ -18,16 +18,14 @@ Here is the real-time monitoring system in action, showing how the model classif
 
 | Posture Classification | Analytical Breakdown |
 | :---: | :---: |
-| ![Live Dashboard](dashboard_positive.jpeg) | ![Posture Distribution](dashboard_chart.jpeg) |
-| *Real-time feedback for "Excellent" posture.* | *Percentage breakdown of sitting habits.* |
+| ![Live Dashboard](assets/dashboard_positive.jpeg) | ![Posture Distribution](assets/dashboard_chart.jpeg) |
 
----
 
 ### Negative Posture Alert
 The system also detects when a user is reaching or slouching, providing immediate visual feedback:
 
 <p align="center">
-  <img src="dashboard_negative.jpeg" width="600">
+  <img src="assets/dashboard_negative.jpeg" width="600">
 </p>
 
 ## Tech Stack
