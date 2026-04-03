@@ -13,11 +13,22 @@ In an era of remote work and long study hours, "Text Neck" and spinal misalignme
 - **Web Interface:** A sleek dashboard to visualize your current posture status.
 
 ## Project Preview
-![Web Dashboard](<img width="1280" height="619" alt="image" src="https://github.com/user-attachments/assets/b0126609-5da1-4189-951e-66c8f960e3d5" />
-)
-*Visualizing posture data through our custom web interface.*
+
+Here is the real-time monitoring system in action, showing how the model classifies posture based on sensor data.
+
+| Posture Classification | Analytical Breakdown |
+| :---: | :---: |
+| ![Live Dashboard](dashboard_positive.jpeg) | ![Posture Distribution](dashboard_chart.jpeg) |
+| *Real-time feedback for "Excellent" posture.* | *Percentage breakdown of sitting habits.* |
 
 ---
+
+### Negative Posture Alert
+The system also detects when a user is reaching or slouching, providing immediate visual feedback:
+
+<p align="center">
+  <img src="dashboard_negative.jpeg" width="600">
+</p>
 
 ## Tech Stack
 
@@ -32,17 +43,11 @@ In an era of remote work and long study hours, "Text Neck" and spinal misalignme
 
 ---
 
-## 🧠 How It Works
+## How It Works
 1. **Data Collection:** The MPU6050 captures raw accelerometer data from the user's upper back.
 2. **Feature Engineering:** Raw data is converted into pitch and roll angles.
 3. **ML Inference:** The `posture.py` script runs a pre-trained model to classify the angle data.
 4. **Alert System:** If "Slouching" is detected for more than 30 seconds, an alert is triggered.
 
 ---
-
-## 📂 Project Structure
-```bash
-├── posture.py            # Main ML logic and Python backend
-├── hardware/             # Arduino (.ino) source files
-├── assets/               # Project images and screenshots
-└── data/                 # Dataset used for training the ML model
+              
